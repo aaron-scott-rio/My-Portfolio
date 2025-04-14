@@ -1,0 +1,92 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.business-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    border: 6px solid slateblue;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    width: 70vw; /* 70% of the viewport width (narrower) */
+    max-width: 450px; /* Reduced max width to 500px */
+    min-height: 200px;
+}
+
+img {
+    border: 4px solid slateblue;
+    border-radius: 20%;
+    margin-right: 20px;
+    height: 150px;
+    width: 150px;
+}
+
+.text {
+    text-align: center;
+    font-family: 'Verdana', sans-serif;
+    color: firebrick;
+}
+
+.text h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: slateblue;
+}
+
+.text h4, .text h5 {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Media query for smaller devices */
+@media (max-width: 768px) {
+    .business-card {
+        flex-direction: column;
+        align-items: center;
+        width: 85vw; /* Adjust width for smaller screens */
+    }
+
+    img {
+        margin-bottom: 15px;
+        height: 120px;
+        width: 120px;
+    }
+
+    .text h1 {
+        font-size: 1.5rem;
+    }
+
+    .text h4, .text h5 {
+        font-size: 0.9rem;
+    }
+}
+
+/* Media query for extra small devices (like mobile) */
+@media (max-width: 480px) {
+    .business-card {
+        padding: 10px;
+        width: 90vw;
+    }
+
+    img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .text h1 {
+        font-size: 1.2rem;
+    }
+
+    .text h4, .text h5 {
+        font-size: 0.8rem;
+    }
+}
