@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css"> <!-- Correct the path to the CSS file -->
+    <link rel="icon" href="../images/logo.ico" type="image/x-icon"> <!-- Correct the path to the favicon -->
+    <title>Contato - Consultório Odontológico</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <h1 id="título">Dentista Dra. Claudia Guimarães</h1>
+            <img class="logo" src="../images/logo.png" alt="Logo da Dra. Claudia Guimarães">
+        </div>
+        <!-- Navigation Menu -->
+        <nav class="menu">
+            <a href="../index.html" class="nav-link">Home</a>
+            <a href="pagina2.html" class="nav-link active">Contato</a> 
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="contact-section">
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <h2>Contato</h2>
+                <p>Entre em contato para agendar uma consulta ou obter mais informações.</p>
+                <address>
+                    <p><strong>Endereço:</strong> Rua Exemplo, 123, São Paulo, SP</p>
+                    <p><strong>Telefone:</strong> <a href="tel:+551112345678">(11) 1234-5678</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:contato@dentistaclaudia.com.br">contato@dentistaclaudia.com.br</a></p>
+                </address>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h3>Envie uma Mensagem</h3>
+                <form action="submit_contact_form.php" method="POST" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Seu Nome:</label>
+                        <input type="text" id="name" name="name" required aria-label="Seu nome">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Seu Email:</label>
+                        <input type="email" id="email" name="email" required aria-label="Seu email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem:</label>
+                        <textarea id="message" name="message" rows="5" required aria-label="Sua mensagem"></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Enviar</button>
+                </form>
+                <div id="form-message"></div>
+            </div>
+
+            <!-- Dentist Image -->
+            <div class="dentist-image">
+                <img src="../images/dra.clau.png" alt="Dra. Claudia Guimarães" class="dentist-img">
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>2024&copy; Consultório Odontológico Dra. Claudia Guimarães</p>
+    </footer>
+</body>
+</html>
