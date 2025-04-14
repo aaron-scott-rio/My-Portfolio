@@ -1,0 +1,170 @@
+/* Base header styles */
+header {
+    background-image: url("./images/rio-day.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 800px;
+    margin: 0 auto;
+    border: 2px solid black;
+    position: relative; 
+}
+
+/* Dark overlay */
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1); 
+    z-index: 0;
+}
+
+/* Text styling */
+.heading, .sub-heading {
+    display: flex;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    position: relative;
+    transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Hover effects for heading and sub-heading */
+.heading:hover, .sub-heading:hover {
+    color: lightskyblue; /* Change text color on hover */
+    transform: scale(1.05); /* Slight scaling on hover */
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 1); /* Enhance shadow on hover */
+}
+
+/* Change background image on header hover */
+header:hover {
+    background-image: url("./images/rio-night.jpg"); /* Change to night image */
+}
+
+/* Adjusting heading size */
+.heading {
+    margin-top: 150px;
+    font-size: 3em;
+}
+
+/* Adjusting sub-heading size */
+.sub-heading {
+    margin-top: -10px;
+    font-size: 2em;
+}
+
+/* Top activities list styling */
+.top-3-activities {
+    text-align: center;
+}
+
+.top-3-list {
+    font-family: 'Verdana', sans-serif;
+    color: lightskyblue;
+    text-shadow: 1px 1px 1px black;
+    font-size: 2em;
+}
+
+/* Grid layout for activities */
+.top-3-activities ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 0 200px;
+    list-style-type: none;
+}
+
+/* Activity image styling */
+.activity-pics img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease; /* Add transition to image */
+}
+
+/* Hover effect for activity images */
+.activity-pics img:hover {
+    transform: scale(1.1); /* Scale the image slightly on hover */
+}
+
+ul {
+    font-family: 'Lato', sans-serif;
+}
+
+li h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-top: 10px;
+}
+
+li p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .top-3-activities ul {
+        grid-template-columns: 1fr;
+        padding: 0 50px;
+    }
+
+    header {
+        height: 400px;
+    }
+
+    .heading {
+        font-size: 2em;
+        margin-top: 100px;
+    }
+
+    .sub-heading {
+        font-size: 1.5em;
+    }
+}
+
+.about-me {
+    background-color: rgba(255, 255, 255, 0.8); /* Light background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Space around text */
+    margin: 40px auto; /* Center it */
+    max-width: 800px; /* Limit width */
+    text-align: center; /* Center text */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.profile-pic {
+    width: 150px; /* Set a fixed width for your photo */
+    border-radius: 50%; /* Circular photo */
+    margin-bottom: 20px; /* Space below the image */
+}
+
+.about-me h2 {
+    font-size: 2.5em; /* Larger heading */
+    color: #0066cc; /* Heading color */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+.about-me p {
+    font-size: 1.2em; /* Slightly larger paragraph text */
+    color: #333; /* Darker text for readability */
+}
+
+.contact-info {
+    font-size: 16px;
+    margin-top: 20px;
+    transition: color 0.3s; /* Smooth transition for color change */
+}
+
+.contact-info:hover {
+    color: #007BFF; /* Change text color on hover */
+    background-color: rgba(0, 123, 255, 0.1); /* Light blue background on hover */
+    padding: 5px; /* Add slight padding for a better effect */
+    border-radius: 5px; /* Slight rounding of corners */
+}
