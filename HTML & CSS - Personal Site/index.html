@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Guimarães-Scott | Professional Translation Services</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+        }
+
+        .logo {
+            width: 200px;
+        }
+
+        .title-container {
+            margin-top: 10px;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            color: darkblue;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-weight: bold;
+            margin: 0;
+            padding: 0;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .tab {
+            flex: 1;
+            padding: 15px;
+            background-color: #003366;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            font-weight: bold;
+            margin-right: 20px; /* Add a small gap between tabs */
+            text-decoration: none; /* Remove underline from the link */
+        }
+
+        .tab:last-child {
+            margin-right: 0; /* Remove the margin-right from the last tab */
+        }
+
+        .tab:hover {
+            background-color: #004080;
+        }
+
+        .active {
+            background-color: #004080;
+        }
+
+        .tab-content {
+            display: none;
+            margin-top: 20px;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .gif-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            animation: gifAnimation 5s infinite; /* Added animation properties */
+        }
+
+        .gif {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+
+    <script>
+        function switchLanguage(lang) {
+            switch (lang) {
+                case 'en-us':
+                    window.location.href = '/en-us/index.html';
+                    break;
+                case 'pt-br':
+                    window.location.href = '/pt-br/index.html';
+                    break;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <!-- Language switcher goes here -->
+        <div style="position: absolute; top: 10px; right: 10px;">
+            <select onchange="switchLanguage(this.value)">
+                <option value="en-us">English (US)</option>
+                <option value="pt-br">Português (Brasil)</option>
+            </select>
+        </div>
+
+        <div class="logo-container">
+            <img src="https://i.ibb.co/JsYK1SC/Logo.jpg" alt="Logo" class="logo">
+            <div class="title-container">
+                <h1>Guimarães-Scott Translation Services</h1>
+                <p>Brazilian Portuguese to English (US/British) & English (US/British) to Brazilian Portuguese</p>
+            </div>
+        </div>
+
+        <div class="tabs">
+            <a href="about.html" class="tab" style="text-decoration: none;">About Us</a>
+            <a href="quote.html" class="tab" style="text-decoration: none;">Get a Quote</a>
+            <a href="contact.html" class="tab" style="text-decoration: none;">Contact Us</a>
+        </div>
+
+        <div id="contact" class="tab-content">
+            <h2>Contact Us</h2>
+            <!-- Add contact form or contact-related content here -->
+        </div>
+
+       
+        <div class="tab-content">
+            <h2>Contact Us</h2>
+            <!-- Add contact form or contact-related content here -->
+        </div>
+
+        <div class="gif-container">
+            <img src="https://i.ibb.co/fXrgzVh/CatGIF.gif" alt="CatGIF" class="gif">
+        </div>
+    </div>
+</body>
+</html>
