@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="equation-box" id="display">0</div>
+        <div class="calculator-keys">
+            <button class="key-c" onclick="clearDisplay()">C</button>
+            <button class="key-back" onclick="backspace()">←</button>
+            <button class="key-divide key-operator" onclick="calculatorKeys('/')">÷</button>
+            
+            <button class="key-7" onclick="calculatorKeys('7')">7</button>
+            <button class="key-8" onclick="calculatorKeys('8')">8</button>
+            <button class="key-9" onclick="calculatorKeys('9')">9</button>
+            <button class="key-x key-operator" onclick="calculatorKeys('*')">x</button>
+
+            <button class="key-4" onclick="calculatorKeys('4')">4</button>
+            <button class="key-5" onclick="calculatorKeys('5')">5</button>
+            <button class="key-6" onclick="calculatorKeys('6')">6</button>
+            <button class="key-minus key-operator" onclick="calculatorKeys('-')">-</button>
+
+            <button class="key-1" onclick="calculatorKeys('1')">1</button>
+            <button class="key-2" onclick="calculatorKeys('2')">2</button>
+            <button class="key-3" onclick="calculatorKeys('3')">3</button>
+            <button class="key-plus key-operator" onclick="calculatorKeys('+')">+</button>
+
+            <button class="key-0" onclick="calculatorKeys('0')">0</button>
+            <button class="key-equals" onclick="evaluateExpression()">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
